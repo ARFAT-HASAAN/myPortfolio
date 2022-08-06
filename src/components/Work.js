@@ -10,12 +10,14 @@ const Work = () => {
   const [Loading, setLoading] = useState(false)
 
   useEffect(() => {
-    axios.get('http://localhost:4000/projects').then((res) => {
-      if (res.data) {
-        setLoading(true)
-        setProjects(res.data)
-      }
-    })
+    axios
+      .get('https://portfoliobackendoriginal.herokuapp.com/projects')
+      .then((res) => {
+        if (res.data) {
+          setLoading(true)
+          setProjects(res.data)
+        }
+      })
   }, [])
 
   return (
