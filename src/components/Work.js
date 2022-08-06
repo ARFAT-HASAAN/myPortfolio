@@ -1,241 +1,47 @@
-import React from 'react';
+import axios from 'axios'
+import React from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
+import Spinner from './Loading'
+import MyProjects from './MyProjects'
 
 const Work = () => {
-    return (
-        <div  name="work" className='w-full md:h-screen bg-gray-900 text-gray-300 '>
-            <div  data-aos="zoom-in-left" data-aos-duration="3000" className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full '>
-            <div className='mb-8'>
-                    <h1 className='inline border-b-2 border-[#FF1600] text-3xl font-bold'>Work</h1>
-                    <p className='py-3 text-2xl' >//Check out some of my recent works.</p>       
-                </div>
-                 
-                {/* container  */}
-                <div className='w-full grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+  const [Projects, setProjects] = useState([])
+  const [Loading, setLoading] = useState(false)
 
-                {/* container item      */}
-                    <div  className='rounded-md shadow-md shadow-slate-400 py-4 flex flex-col justify-center container-div group'>
+  useEffect(() => {
+    axios.get('http://localhost:4000/projects').then((res) => {
+      if (res.data) {
+        setLoading(true)
+        setProjects(res.data)
+      }
+    })
+  }, [])
 
-                        <div className='opacity-0 text-center p-2 group-hover:opacity-100'>
-                            <span className='text-2xl py-3 tracking-wider' >
-                                Mern Applicaton
-                            </span>
-
-                            {/* button  */}
-                            <div  className='flex justify-around pt-5'>
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Demo
-                                    </button> 
-                                </a>
-
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Code
-                                    </button> 
-                                </a>
-                            </div>
-
-                            {/* backend button  */}
-                            <div className='text-center pt-5 mt-2'>
-                                <a href="">
-                                    <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                   Backend
-                                </button>
-                                </a>
-                            </div>
-                            
-
-                        </div>
-
-
-                     </div>
-                    <div  className='rounded-md shadow-md shadow-slate-400 py-4 flex flex-col justify-center container-div group'>
-
-                        <div className=' text-center opacity-0 p-2 group-hover:opacity-100'>
-                            <span className='text-2xl py-3 tracking-wider' >
-                                Mern Applicaton
-                            </span>
-
-                            {/* button  */}
-                            <div  className='flex justify-around pt-5'>
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Demo
-                                    </button> 
-                                </a>
-
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Code
-                                    </button> 
-                                </a>
-                            </div>
-
-                            {/* backend button  */}
-                            <div className='text-center pt-5 mt-2'>
-                                <a href="">
-                                    <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                   Backend
-                                </button>
-                                </a>
-                            </div>
-                            
-
-                        </div>
-
-
-                     </div>
-                    <div  className='rounded-md shadow-md shadow-slate-400 py-4 flex flex-col justify-center container-div group'>
-
-                        <div className='opacity-0 text-center p-2 group-hover:opacity-100'>
-                            <span className='text-2xl py-3 tracking-wider' >
-                                Mern Applicaton
-                            </span>
-
-                            {/* button  */}
-                            <div  className='flex justify-around pt-5'>
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Demo
-                                    </button> 
-                                </a>
-
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Code
-                                    </button> 
-                                </a>
-                            </div>
-
-                            {/* backend button  */}
-                            <div className='text-center pt-5 mt-2'>
-                                <a href="">
-                                    <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                   Backend
-                                </button>
-                                </a>
-                            </div>
-                            
-
-                        </div>
-
-
-                     </div>
-                    <div  className='rounded-md shadow-md shadow-slate-400 py-4 flex flex-col justify-center container-div group'>
-
-                        <div className='opacity-0 text-center p-2 group-hover:opacity-100'>
-                            <span className='text-2xl py-3 tracking-wider' >
-                                Mern Applicaton
-                            </span>
-
-                            {/* button  */}
-                            <div  className='flex justify-around pt-5'>
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Demo
-                                    </button> 
-                                </a>
-
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Code
-                                    </button> 
-                                </a>
-                            </div>
-
-                            {/* backend button  */}
-                            <div className='text-center pt-5 mt-2'>
-                                <a href="">
-                                    <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                   Backend
-                                </button>
-                                </a>
-                            </div>
-                            
-
-                        </div>
-
-
-                     </div>
-                    <div  className='rounded-md shadow-md shadow-slate-400 py-4 flex flex-col justify-center container-div group'>
-
-                        <div className='opacity-0 text-center p-2 group-hover:opacity-100'>
-                            <span className='text-2xl py-3 tracking-wider' >
-                                Mern Applicaton
-                            </span>
-
-                            {/* button  */}
-                            <div  className='flex justify-around pt-5'>
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Demo
-                                    </button> 
-                                </a>
-
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Code
-                                    </button> 
-                                </a>
-                            </div>
-
-                            {/* backend button  */}
-                            <div className='text-center pt-5 mt-2'>
-                                <a href="">
-                                    <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                   Backend
-                                </button>
-                                </a>
-                            </div>
-                            
-
-                        </div>
-
-
-                     </div>
-                    <div  className='rounded-md shadow-md shadow-slate-400 py-4 flex flex-col justify-center container-div group'>
-
-                        <div className='opacity-0 text-center p-2  group-hover:opacity-100'>
-                            <span className='text-2xl py-3 tracking-wider' >
-                                Mern Applicaton
-                            </span>
-
-                            {/* button  */}
-                            <div  className='flex justify-around pt-5'>
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Demo
-                                    </button> 
-                                </a>
-
-                                <a href="">
-                                     <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                        Code
-                                    </button> 
-                                </a>
-                            </div>
-
-                            {/* backend button  */}
-                            <div className='text-center pt-5 mt-2'>
-                                <a href="">
-                                    <button className='bg-slate-50 text-gray-800 rounded-md px-2 shadow-md'>
-                                   Backend
-                                </button>
-                                </a>
-                            </div>
-                            
-
-                        </div>
-
-
-                     </div>
-
-                </div>
-
-            </div>
-            
+  return (
+    <div name="work" className="w-full md:h-screen bg-gray-900 text-gray-300 ">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full ">
+        <div className="mb-8">
+          <h1 className="inline border-b-2 border-[#FF1600] text-3xl font-bold">
+            Work
+          </h1>
+          <p className="py-3 text-2xl">//Check out some of my recent works.</p>
         </div>
-    );
-};
+        {/* <Spinner></Spinner> */}
+        {/* container   */}
 
-export default Work;
+        {!Loading ? (
+          <Spinner />
+        ) : (
+          <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {Projects.map((project) => (
+              <MyProjects myProjects={project} key={project._id}></MyProjects>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default Work
