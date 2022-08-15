@@ -31,8 +31,12 @@ const Work = () => {
             icon: 'warning',
             title: 'Opps',
             text:
-              'slow or no internet connecton please check your internet connecton or refresh the page',
-            buttons: 'okay',
+              'Connectino dropped! Please check your internet connecton or reload the page',
+            buttons: 'Reload',
+          }).then((res) => {
+            if (res) {
+              window.location.reload()
+            }
           })
         }
       })
