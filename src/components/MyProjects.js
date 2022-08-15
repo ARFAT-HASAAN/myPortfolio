@@ -16,13 +16,13 @@ const MyProjects = ({ myProjects }) => {
 
           {/* button  */}
           <div className="flex justify-around pt-5">
-            <a href={myProjects.live}>
+            <a href={myProjects.live} target="_blank" rel="noreferrer">
               <button className="bg-slate-900 text-white rounded-md px-2 shadow-md">
                 Demo
               </button>
             </a>
 
-            <a href={myProjects.fronted}>
+            <a href={myProjects.fronted} target="_blank" rel="noreferrer">
               <button className="bg-slate-900 text-white rounded-md px-2 shadow-md">
                 Code
               </button>
@@ -31,7 +31,7 @@ const MyProjects = ({ myProjects }) => {
 
           {/* backend button  */}
           <div className="text-center pt-5 mt-2">
-            <a href={myProjects.backend}>
+            <a href={myProjects.backend} target="_blank" rel="noreferrer">
               <button className="bg-slate-900 text-white rounded-md px-2 shadow-md">
                 Backend
               </button>

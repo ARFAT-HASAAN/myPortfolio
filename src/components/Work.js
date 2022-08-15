@@ -4,6 +4,11 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import Spinner from './Loading'
 import MyProjects from './MyProjects'
+import swal from 'sweetalert'
+
+export const isLoading = (state) => {
+  return state
+}
 
 const Work = () => {
   const [Projects, setProjects] = useState([])
@@ -15,7 +20,20 @@ const Work = () => {
       .then((res) => {
         if (res.data) {
           setLoading(true)
+          isLoading(true)
           setProjects(res.data)
+        }
+      })
+      .catch((error) => {
+        console.log(error)
+        if (error.message) {
+          swal({
+            icon: 'warning',
+            title: 'Opps',
+            text:
+              'slow or no internet connecton please check your internet connecton or refresh the page',
+            buttons: 'okay',
+          })
         }
       })
   }, [])

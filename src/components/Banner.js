@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaHandPointRight } from 'react-icons/fa'
+import { FaHandPointRight, FaDownload } from 'react-icons/fa'
+import { Button } from 'react-scroll'
 import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Banner = () => {
@@ -39,13 +40,17 @@ const Banner = () => {
           Currently, I focused on bulding mern-stack web applications.{' '}
         </p>
 
-        <div className="group max-w-[160px]">
+        <div className="group max-w-[200px] flex  justify-between">
           <button className="border-2 group-hover:bg-[#FF1600] border-[#FF1600]   text-white px-4 py-2 font-bold flex items-center ">
-            {' '}
-            View Work{' '}
-            <span className="group-hover:rotate-90 duration-500">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1GBMXVB9y_VuudlU9u1tZAPoJoFwZXVUt"
+              download
+            >
+              Resume
+            </a>
+            <span className="group-hover:rotate-40 duration-500">
               {' '}
-              <FaHandPointRight size={20} className="ml-4" />{' '}
+              <FaDownload size={20} className="ml-4" />{' '}
             </span>{' '}
           </button>
         </div>
