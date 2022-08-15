@@ -11,12 +11,12 @@ const Banner = () => {
         data-aos-duration="1500"
         className="max-w-[1000px] mx-auto  flex flex-col justify-center px-4  h-full"
       >
-        <p className="text-[#FF1600] text-[20px] font-semibold pt-12 md:pt-0">
+        <p className="text-[#FF1600] text-[16px] font-semibold pt-12 md:pt-0">
           Hi. My name is
         </p>
-        <h1 className="text-4xl sm:text-7xl text-gray-300">Arfat Hasan </h1>
+        <h1 className="text-2xl sm:text-7xl text-gray-300">Arfat Hasan </h1>
 
-        <h2 className="text-4xl sm:text-7xl text-gray-400">
+        <h2 className="text-2xl md:text-4xl text-gray-400">
           I'am a{' '}
           <span style={{ color: '#FF1600' }}>
             {' '}
@@ -27,14 +27,14 @@ const Banner = () => {
               typeSpeed={100}
               delaySpeed={90}
               words={[
-                'Front End Developer.',
+                'Front End Developer',
                 'Web Designer.',
                 'React Developer',
               ]}
             />{' '}
           </span>
         </h2>
-        <p className="text-gray-400 py-4 text-[18px] font-semibold max-w-[700px]">
+        <p className="text-gray-400 py-4 text-[16px] md:text-[18px] font-semibold max-w-[700px]">
           I'am a front end developer specializing in bulding react application (
           and occasionally designing) exceptional digital experiences.
           Currently, I focused on bulding mern-stack web applications.{' '}
