@@ -42,10 +42,6 @@ const Navbar = () => {
           {' '}
           <li>Skills</li>{' '}
         </Link>
-        <Link to="blogs" smooth={true} duration={900}>
-          {' '}
-          <li>Blogs</li>{' '}
-        </Link>
       </ul>
 
       {/* humburger logo  */}
@@ -66,11 +62,25 @@ const Navbar = () => {
             : 'w-full h-screen absolute top-0 left-0 flex flex-col justify-center items-center  text-slate-200 bg-gray-900'
         }
       >
-        <li className="py-3 font-semibold cursor-pointer">Home</li>
-        <li className="py-3 font-semibold cursor-pointer">work</li>
-        <li className="py-3 font-semibold cursor-pointer">About</li>
-        <li className="py-3 font-semibold cursor-pointer">Contact</li>
-        <li className="py-3 font-semibold cursor-pointer">resume</li>
+        <Link to="home" onClick={Manubar} smooth={true} duration={900}>
+          <li>Home</li>{' '}
+        </Link>
+        <Link to="work" onClick={Manubar} smooth={true} duration={900}>
+          {' '}
+          <li>work</li>{' '}
+        </Link>
+        <Link to="about" onClick={Manubar} smooth={true} duration={900}>
+          {' '}
+          <li>About</li>{' '}
+        </Link>
+        <Link to="contact" onClick={Manubar} smooth={true} duration={900}>
+          {' '}
+          <li>Contact</li>{' '}
+        </Link>
+        <Link to="skills" onClick={Manubar} smooth={true} duration={900}>
+          {' '}
+          <li>Skills</li>{' '}
+        </Link>
       </ul>
 
       {/* social manu  */}
