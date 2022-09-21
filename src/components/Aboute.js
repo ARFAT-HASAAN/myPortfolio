@@ -6,12 +6,18 @@ const Aboute = () => {
   return (
     <div
       name="about"
-      className="bg-gray-900 block h-screen w-full py-5 md:py-0  text-gray-300"
+      className="
+      bg-gray-900
+      w-full
+      md:h-screen 
+      py-8
+      md:py-0 
+      text-gray-300"
     >
       <div className="flex flex-col justify-center gap-8 items-center h-full">
         <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
+          data-aos="fade-up"
+          data-aos-duration="2000"
           className="max-w-[1000px] grid grid-cols-2  gap-8 w-full px-4 "
         >
           <div className="sm:text-right">

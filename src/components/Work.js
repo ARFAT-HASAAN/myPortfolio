@@ -16,7 +16,7 @@ const Work = () => {
 
   useEffect(() => {
     axios
-      .get('https://portfoliobackendoriginal.herokuapp.com/projects')
+      .get('https://arfat-hasaan.github.io/API/Projects.json')
       .then((res) => {
         if (res.data) {
           setLoading(true)

@@ -49,7 +49,7 @@ const Navbar = () => {
         {!nav ? (
           <FaBars className="text-2xl " />
         ) : (
-          <FaTimes className="text-2xl" />
+          <FaTimes className="text-2xl" color="black" />
         )}
       </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'w-full h-screen absolute top-0 left-0 flex flex-col justify-center items-center z-1 text-slate-200 bg-gray-900'
+            : 'w-full h-screen absolute top-0 left-0 flex flex-col justify-center items-center z-1 text-gray-900 bg-slate-200 '
         }
       >
         <Link to="home" onClick={Manubar} smooth={true} duration={900}>

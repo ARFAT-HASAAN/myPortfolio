@@ -12,7 +12,14 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="bg-gray-900 text-gray-300 md:h-screen w-full md:py-0 "
+      className="bg-gray-900
+      w-full 
+      md:py-0
+       py-8
+      text-gray-300
+       md:h-screen 
+      
+      "
     >
       <div
         data-aos="flip-left"

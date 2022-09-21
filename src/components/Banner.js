@@ -5,7 +5,15 @@ import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Banner = () => {
   return (
-    <div name="home" className="w-full md:h-screen bg-gray-900 py-8 md:py-0 ">
+    <div
+      name="home"
+      className="
+  bg-gray-900 
+    w-full 
+    md:h-screen 
+    py-8
+    md:py-0 "
+    >
       <div
         data-aos="fade-down"
         data-aos-duration="1500"
