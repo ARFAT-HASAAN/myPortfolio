@@ -44,7 +44,12 @@ const Work = () => {
 
   return (
     <div name="work" className="w-full md:h-screen bg-gray-900 text-gray-300 ">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full ">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
+        className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full "
+      >
         <div className="mb-8">
           <h1 className="inline border-b-2 border-[#FF1600] text-3xl font-bold">
             Work

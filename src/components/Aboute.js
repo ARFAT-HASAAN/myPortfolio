@@ -14,7 +14,11 @@ const Aboute = () => {
       md:py-0 
       text-gray-300"
     >
-      <div className="flex flex-col justify-center gap-8 items-center h-full">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="flex flex-col justify-center gap-8 items-center h-full"
+      >
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
