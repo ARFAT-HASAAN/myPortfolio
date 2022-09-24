@@ -17,7 +17,7 @@ const Aboute = () => {
       <div className="flex flex-col justify-center gap-8 items-center h-full">
         <div
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="3000"
           className="max-w-[1000px] grid grid-cols-2  gap-8 w-full px-4 "
         >
           <div className="sm:text-right">
@@ -29,11 +29,7 @@ const Aboute = () => {
           <div></div>
         </div>
 
-        <div
-          data-aos="fade-left"
-          data-aos-duration="3000"
-          className="max-w-[1000px] grid md:grid-cols-2 gap-8 px-4 "
-        >
+        <div className="max-w-[1000px] grid md:grid-cols-2 gap-8 px-4 ">
           <div>
             <h1 className="text-2xl md:text-4xl ">
               Hi. I'am Arfat, nice to meet you. Please take a look around.
