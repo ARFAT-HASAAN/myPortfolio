@@ -22,32 +22,55 @@ const Navbar = () => {
             <nav className="flex justify-between items-center ">
               {/* logo  */}
               <div>
-                <img src={logo} style={{ width: '60px' }} alt="logo" />
+                <img
+                  src={logo}
+                  className="w-[50px] sm:w-[60px] md:w-[80px]"
+                  alt="logo"
+                />
               </div>
 
               {/* manu  */}
-              <ul className="hidden md:flex text-red-700">
+              <ul className="hidden md:flex gap-4 text-white">
                 <Link
-                  className="hover:border-b-4 border-red-700 font-bold transition-all duration-200 "
-                  to="home"
+                  className="hover:border-b border-red-700 transition-all duration-150  font-semibold text-xl  "
+                  to="/"
                   smooth={true}
                   duration={900}
                 >
                   <li>Home</li>{' '}
                 </Link>
-                <Link to="work" smooth={true} duration={900}>
-                  {' '}
+                <Link
+                  to="work"
+                  smooth={true}
+                  duration={900}
+                  className="hover:border-b border-red-700 transition-all duration-150  font-semibold text-xl  "
+                >
                   <li>work</li>{' '}
                 </Link>
-                <Link to="about" smooth={true} duration={900}>
+                <Link
+                  to="about"
+                  className="hover:border-b border-red-700 transition-all duration-150 mx-4 font-semibold text-xl  "
+                  smooth={true}
+                  duration={900}
+                >
                   {' '}
                   <li>About</li>{' '}
                 </Link>
-                <Link to="contact" smooth={true} duration={900}>
+                <Link
+                  to="contact"
+                  className="hover:border-b border-red-700 transition-all duration-150 mx-4 font-semibold text-xl  "
+                  smooth={true}
+                  duration={900}
+                >
                   {' '}
                   <li>Contact</li>{' '}
                 </Link>
-                <Link to="skills" smooth={true} duration={900}>
+                <Link
+                  to="skills"
+                  className="hover:border-b border-red-700 transition-all duration-150 mx-4 font-semibold text-xl  "
+                  smooth={true}
+                  duration={900}
+                >
                   {' '}
                   <li>Skills</li>{' '}
                 </Link>
@@ -55,33 +78,61 @@ const Navbar = () => {
 
               {/* hamburger  */}
 
-              <div onClick={Manubar} className="md:hidden z-40 cursor-pointer">
+              <div
+                onClick={Manubar}
+                className="md:hidden transition-all duration-75 z-40 cursor-pointer"
+              >
                 {!nav ? (
-                <FaBars className="text-2xl text-white " />
-                ):
-                <FaTimes className="text-2xl text-white" /> 
-}
+                  <FaBars className="text-2xl transition-all duration-75 text-white " />
+                ) : (
+                  <FaTimes className="text-2xl transition-all duration-75 text-white" />
+                )}
               </div>
             </nav>
           </div>
-          <div >
-            <ul className={nav? "max-h-40 bg-red-700 overflow-auto md:hidden transition-all  duration-1000" : " transition-all  duration-1000  flex-col  max-h-0 overflow-hidden "}>
-              <Link to="home" smooth={true} duration={900}>
-                <li>Home</li>{' '}
+          <div>
+            <ul
+              className={
+                nav
+                  ? 'max-h-fit overflow-auto flex flex-col gap-6 border-t border-red-700 py-5 my-4 text-white md:hidden transition-all  duration-1000'
+                  : ' transition-all  duration-1000     max-h-0 overflow-hidden '
+              }
+            >
+              <Link className="" to="home" smooth={true} duration={900}>
+                <li className="hover:text-red-700 transition-all duration-75">
+                  Home
+                </li>{' '}
               </Link>
               <Link to="work" smooth={true} duration={900}>
                 {' '}
-                <li>works</li>{' '}
+                <li className="hover:text-red-700 transition-all duration-75">
+                  works
+                </li>{' '}
               </Link>
-              <Link to="about" smooth={true} duration={900}>
+              <Link
+                className="hover:text-red-700 transition-all duration-75"
+                to="about"
+                smooth={true}
+                duration={900}
+              >
                 {' '}
                 <li>About</li>{' '}
               </Link>
-              <Link to="contact" smooth={true} duration={900}>
+              <Link
+                className="hover:text-red-700 transition-all duration-75"
+                to="contact"
+                smooth={true}
+                duration={900}
+              >
                 {' '}
                 <li>Contact</li>{' '}
               </Link>
-              <Link to="skills" smooth={true} duration={900}>
+              <Link
+                className="hover:text-red-700 transition-all duration-75"
+                to="skills"
+                smooth={true}
+                duration={900}
+              >
                 {' '}
                 <li>Skills</li>{' '}
               </Link>

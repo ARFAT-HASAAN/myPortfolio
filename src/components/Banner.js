@@ -5,7 +5,15 @@ import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Banner = () => {
   return (
-    <div
+    
+  )
+}
+
+export default Banner
+
+
+/*
+ <div
       name="home"
       className="
   bg-gray-900 
@@ -64,7 +72,5 @@ const Banner = () => {
         </div>
       </div>
     </div>
-  )
-}
 
-export default Banner
+*/

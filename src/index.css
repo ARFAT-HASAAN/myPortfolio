@@ -10,7 +10,10 @@
         @apply bg-[#111827];
         @apply font-[Raleway]
     }
-
+    a:active {
+        @apply border-b;
+        @apply border-red-700;
+    }
     li {
         @apply px-4;
         @apply cursor-pointer;
