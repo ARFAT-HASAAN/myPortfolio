@@ -7,7 +7,7 @@
 @layer base {
 
     body {
-
+        @apply bg-[#111827];
         @apply font-[Raleway]
     }
 
@@ -18,7 +18,17 @@
     }
 }
 
+.contaienr{
+    width: 95%;
+    margin: 0 auto;
+}
 
+@media (max-whidth: 590px){
+    .contaienr{
+        width: 100%;
+    }
+
+}
 .container-div:hover {
     background-image: linear-gradient(to right,
             rgba(112, 157, 255, 0.8),
