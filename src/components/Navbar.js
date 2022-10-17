@@ -80,12 +80,12 @@ const Navbar = () => {
 
               <div
                 onClick={Manubar}
-                className="md:hidden transition-all duration-75 z-40 cursor-pointer"
+                className="md:hidden transition-all duration-200 z-40 cursor-pointer"
               >
                 {!nav ? (
-                  <FaBars className="text-2xl transition-all duration-75 text-white " />
+                  <FaBars className="text-2xl transition-all duration-200 text-white " />
                 ) : (
-                  <FaTimes className="text-2xl transition-all duration-75 text-white" />
+                  <FaTimes className="text-2xl transition-all duration-200 text-white" />
                 )}
               </div>
             </nav>
@@ -94,23 +94,23 @@ const Navbar = () => {
             <ul
               className={
                 nav
-                  ? 'max-h-fit overflow-auto flex flex-col gap-6 border-t border-red-700 py-5 my-4 text-white md:hidden transition-all  duration-1000'
-                  : ' transition-all  duration-1000     max-h-0 overflow-hidden '
+                  ? 'h-[300px] overflow-auto flex flex-col gap-6 border-t border-red-700 py-5 my-4 text-white md:hidden transition-all  duration-1000'
+                  : ' transition-all  duration-1000     h-[0px] overflow-hidden '
               }
             >
               <Link className="" to="home" smooth={true} duration={900}>
-                <li className="hover:text-red-700 transition-all duration-75">
+                <li className="hover:text-red-700 transition-all duration-200">
                   Home
                 </li>{' '}
               </Link>
               <Link to="work" smooth={true} duration={900}>
                 {' '}
-                <li className="hover:text-red-700 transition-all duration-75">
+                <li className="hover:text-red-700 transition-all duration-200">
                   works
                 </li>{' '}
               </Link>
               <Link
-                className="hover:text-red-700 transition-all duration-75"
+                className="hover:text-red-700 transition-all duration-200"
                 to="about"
                 smooth={true}
                 duration={900}
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <li>About</li>{' '}
               </Link>
               <Link
-                className="hover:text-red-700 transition-all duration-75"
+                className="hover:text-red-700 transition-all duration-200"
                 to="contact"
                 smooth={true}
                 duration={900}
@@ -128,7 +128,7 @@ const Navbar = () => {
                 <li>Contact</li>{' '}
               </Link>
               <Link
-                className="hover:text-red-700 transition-all duration-75"
+                className="hover:text-red-700 transition-all duration-200"
                 to="skills"
                 smooth={true}
                 duration={900}

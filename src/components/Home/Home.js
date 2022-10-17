@@ -65,12 +65,12 @@ const Home = () => {
       <Navbar></Navbar>
 
       <Banner></Banner>
-      {/*
+
       <Aboute></Aboute>
       <Skills></Skills>
       <Work></Work>
       <Contact></Contact>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </>
   )
 }
