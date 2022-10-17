@@ -21,9 +21,14 @@
     }
 }
 
-.contaienr{
+.contaiener{
     width: 95%;
     margin: 0 auto;
+}
+
+.Banner__height{
+    height: calc(100vh - 70px);
+
 }
 
 @media (max-whidth: 590px){

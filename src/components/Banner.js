@@ -5,12 +5,28 @@ import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Banner = () => {
   return (
-    
+    <>
+      <section className="contaiener text-white ">
+        <div className="flex flex-col md:flex-row justify-around  items-center gap-x-40 Banner__height ">
+          <div className="flex flex-col gap-5 text-center">
+            <h1 className="text-6xl text-red-700 font-extrabold ">
+              Arafat Hasan
+            </h1>
+            <h2 className="text-3xl font-extrabold">Frontend Developer</h2>
+            <button className="py-2 px-6 border w-[160px] mx-auto border-red-700 font-extrabold text-2xl hover:bg-red-700 text-white transition-colors duration-100 ">
+              Resume
+            </button>
+          </div>
+          <div>
+            <h1>My images</h1>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
 export default Banner
-
 
 /*
  <div

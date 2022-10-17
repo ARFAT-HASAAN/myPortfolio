@@ -16,7 +16,7 @@ const Navbar = () => {
   console.log(nav)
   return (
     <>
-      <section className="contaienr">
+      <section className="contaiener">
         <div className="flex-col">
           <div className="h-[70px] py-5">
             <nav className="flex justify-between items-center ">
