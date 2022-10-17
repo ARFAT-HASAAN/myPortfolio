@@ -64,8 +64,8 @@ const Home = () => {
       </div>
       <Navbar></Navbar>
 
-      {/*
       <Banner></Banner>
+      {/*
       <Aboute></Aboute>
       <Skills></Skills>
       <Work></Work>

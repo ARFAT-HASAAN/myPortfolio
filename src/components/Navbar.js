@@ -13,7 +13,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
 
   const Manubar = () => setNav(!nav)
-
+  console.log(nav)
   return (
     <>
       <section className="contaienr">
@@ -56,22 +56,22 @@ const Navbar = () => {
               {/* hamburger  */}
 
               <div onClick={Manubar} className="md:hidden z-40 cursor-pointer">
-                {/* {!nav ? ( */}
+                {!nav ? (
                 <FaBars className="text-2xl text-white " />
-                {/* ) : ( */}
-                {/* <FaTimes className="text-2xl text-white" /> */}
-                {/* )} */}
+                ):
+                <FaTimes className="text-2xl text-white" /> 
+}
               </div>
             </nav>
           </div>
-          <div className="w-30  bg-slate-300">
-            <ul className="md:hidden flex-col text-red-700 bg-slate-900 ">
+          <div >
+            <ul className={nav? "max-h-40 bg-red-700 overflow-auto md:hidden transition-all  duration-1000" : " transition-all  duration-1000  flex-col  max-h-0 overflow-hidden "}>
               <Link to="home" smooth={true} duration={900}>
                 <li>Home</li>{' '}
               </Link>
               <Link to="work" smooth={true} duration={900}>
                 {' '}
-                <li>work</li>{' '}
+                <li>works</li>{' '}
               </Link>
               <Link to="about" smooth={true} duration={900}>
                 {' '}
