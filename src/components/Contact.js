@@ -2,9 +2,8 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { FaSpinner } from 'react-icons/fa'
 import { useLocation, useNavigate } from 'react-router-dom'
-
+import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
-  let location = useLocation()
   const navigate = useNavigate()
 
   const [error, setError] = useState(null)
@@ -17,48 +16,53 @@ const Contact = () => {
     setQuery({ ...query, [name]: value })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const user = { ...query }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   const user = { ...query }
 
-    setLoading(true)
+  //   setLoading(true)
 
-    axios
-      .post('https://portfoliobackendoriginal.herokuapp.com/users', user)
-      .then((res) => {
-        // check message
-        if (res.data.acknowledged) {
-          setLoading(false)
-          setError('')
-          navigate('Thnkfull')
-        }
-      })
+  //   axios
+  //     .post('https://portfoliobackendoriginal.herokuapp.com/users', user)
+  //     .then((res) => {
+  //       // check message
+  //       if (res.data.acknowledged) {
+  //         setLoading(false)
+  //         setError('')
+  //         navigate('Thnkfull')
+  //       }
+  //     })
 
-      // catch error
-      .catch((error) => {
-        setError(error.message)
-        setLoading(false)
-      })
+  //     // catch error
+  //     .catch((error) => {
+  //       setError(error.message)
+  //       setLoading(false)
+  //     })
 
-      // clear input
-      .finally(
-        setQuery({
-          name: '',
-          email: '',
-          message: '',
-        }),
-      )
+  //     // clear input
+  //     .finally(
+  //       setQuery({
+  //         name: '',
+  //         email: '',
+  //         message: '',
+  //       }),
+  //     )
+  // }
+
+
+  const [state, handleSubmit] = useForm("meqdlgoy");
+  if (state.succeeded) {
+      return   navigate('Thnkfull')
   }
 
   return (
-    <div name="contact" className="bg-gray-900 w-full h-screen text-gray-300">
+    <div name="contact" className="section text-white">
       <div
-        data-aos="fade-up"
-        data-aos-duration="3000"
-        className="max-w-[1000px] m-auto px-2 flex flex-col justify-center h-screen "
+       
+        className=" px-2 flex flex-col justify-center h-screen "
       >
         <div className="mb-8">
-          <h1 className="inline text-3xl font-bold border-b-2 border-[#FF1600]">
+          <h1 className="inline text-3xl md:text-5xl font-bold border-b-2 border-[#FF1600]">
             Contact
           </h1>
           <p className="mt-4">
@@ -70,56 +74,62 @@ const Contact = () => {
 
         {/* form  */}
 
-        <div className="">
-          <form onSubmit={handleSubmit}>
-            <input
-              required
-              value={query.name}
-              onChange={handleChange}
-              name="name"
-              className="w-full mb-4 border-0 p-2 bg-indigo-200 text-slate-600 outline-none"
-              placeholder="Name"
-              type="text"
-            />
-            <input
-              required
-              value={query.email}
-              onChange={handleChange}
-              name="email"
-              className="w-full mb-4 border-0 p-2 bg-indigo-200 text-slate-600 outline-none"
-              placeholder="Email"
-              type="email"
-            />
-            <textarea
-              required
-              value={query.message}
-              onChange={handleChange}
-              name="message"
-              className="w-full mb-4 border-0 p-2 bg-indigo-200 text-slate-600 outline-none"
-              id=""
-              placeholder="Message here"
-              rows="5"
-            ></textarea>
+         <div className=''>
+         <form onSubmit={handleSubmit}>
+          <label className='text-xl font-bold ' htmlFor='name'>
+            Name
+          </label> <br></br>
+           <input
+           className='my-2 py-2 px-2 w-full rounded text-slate-800'
+           placeholder='Your name'
+           id='name'
+           type="text"
+           name="name"
+           required
+           /> <br></br>
+           <ValidationError 
+        prefix="Nmail" 
+        field="naem"
+        errors={state.errors}
+      />
+      <label className='text-xl font-bold ' htmlFor="email">
+        Email Address
+      </label> <br></br>
+      <input
+       className='my-2 py-2 px-2 w-full text-slate-900 rounded'
+        placeholder='Your Email'
+        required
+        id="email"
+        type="email" 
+        name="email"
+      />  <br></br>
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <label className='text-xl font-bold ' htmlFor="message">
+        Message
+      </label> <br></br>
+      <textarea
+      placeholder='Message'
+      required
+                   className='my-2 py-2 px-2 w-full text-slate-900 rounded'
 
-            {loading ? (
-              <button className="px-4 py-2 rounded-md shadow-md text-center bg-white text-black max-w-[80px] mx-auto block">
-                {' '}
-                <svg className="animate-spin h-5 w-5 mr-3 " viewBox="0 0 24 24">
-                  <FaSpinner size={25}></FaSpinner>
-                </svg>{' '}
-              </button>
-            ) : (
-              <button
-                id="btn"
-                className="px-3 py-2 text-[18px] text-center border-2 border-[#FF1600] font-bold hover:bg-[#FF1600]  max-w-[180px] mx-auto block"
-                type="submit"
-              >
-                Let's Collaborate{' '}
-              </button>
-            )}
-          </form>
-          {error && <p className="text-red-600 text-center">{error}</p>}
-        </div>
+
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      /> <br></br>
+      <button className='border-2 border-red-700 px-5 py-2 w-[160px]  m-auto  hover:bg-red-700 text-white transition-all duration-150' type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+         </div>
       </div>
     </div>
   )

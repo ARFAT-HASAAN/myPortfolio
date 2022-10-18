@@ -66,7 +66,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row w-full justify-start my-12  shadow-2xl ">
+        <div className="flex flex-col md:flex-row w-full justify-start my-12  shadow-md shadow-white ">
           <div className="flex-1">
             <img src={mockup} alt="" />
           </div>
@@ -80,7 +80,7 @@ const Work = () => {
               expedita sapiente corporis culpa voluptatem distinctio.{' '}
             </p>
             <button className="py-2 px-6 border w-[260px] mx-auto border-red-700 font-extrabold text-2xl hover:bg-red-700 text-white transition-colors duration-100 ">
-              Live preview
+              Live Preview
             </button>
           </div>
         </div>

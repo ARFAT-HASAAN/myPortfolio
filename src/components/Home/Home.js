@@ -69,7 +69,6 @@ const Home = () => {
       <Work></Work>
 
       <Aboute></Aboute>
-      <Skills></Skills>
       <Contact></Contact>
       <Footer></Footer>
     </>
