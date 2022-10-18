@@ -7,6 +7,7 @@ import Footer from '../Footer'
 import Navbar from '../Navbar'
 import Skills from '../Skills'
 import Work from '../Work'
+import Stratagy from '../Strategy'
 import {
   FaBars,
   FaTimes,
@@ -63,8 +64,8 @@ const Home = () => {
         </li>
       </div>
       <Navbar></Navbar>
-
       <Banner></Banner>
+       <Stratagy/>
 
       <Aboute></Aboute>
       <Skills></Skills>
