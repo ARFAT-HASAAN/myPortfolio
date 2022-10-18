@@ -65,11 +65,11 @@ const Home = () => {
       </div>
       <Navbar></Navbar>
       <Banner></Banner>
-       <Stratagy/>
+      <Stratagy />
+      <Work></Work>
 
       <Aboute></Aboute>
       <Skills></Skills>
-      <Work></Work>
       <Contact></Contact>
       <Footer></Footer>
     </>
