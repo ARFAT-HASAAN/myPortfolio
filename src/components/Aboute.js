@@ -1,23 +1,23 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import { FaDownload } from 'react-icons/fa'
-import mypicture from "../assets/bannerme.png"
+import mypicture from '../assets/bannerme.png'
 
 const Aboute = () => {
   return (
     <>
-     
-     <section className='section'>
+      <section className="section md:h-screen ">
+        <div>
+          <h1 className="text-4xl text-center md:text-left md:text-6xl font-bold  text-white inline-block my-4 md:my-40  border-b-2 border-[#FF1600]  ">
+            {' '}
+            ABOUT ME{' '}
+          </h1>
+        </div>
 
-      <div>
-         <h1 className='text-5xl font-bold text-white'> ABOUT ME </h1>
-      </div>
-
-       <div className='flex flex-col md:flex-row justify-between items-center gap-6 text-white my-8'>
-          <div>
-
-          <div className="w-[230px] h-[230px] md:w-[400px] md:h-[400px] rounded-full relative bg-red-700">
-              <div className="w-[230px] h-[230px] md:w-[400px] md:h-[400px] rounded-full  absolute top-5 right-6 overflow-hidden bg-slate-800">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-white ">
+          <div className="flex flex-1 ">
+            <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px]  relative bg-[#F51613]">
+              <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px]   absolute top-3 right-3 overflow-hidden bg-slate-800">
                 <img
                   style={{ width: '100%' }}
                   src={mypicture}
@@ -25,45 +25,69 @@ const Aboute = () => {
                 />
               </div>
             </div>
-
           </div>
-    
-          <div className=' flex flex-col gap-4 flex-1'>
 
-             <h1 className='text-2xl text-white font-bold'>Hi, I am Arafat Hasan</h1>
+          <div className=" flex flex-col gap-4 flex-1 text-center md:text-left">
+            <h1 className="text-3xl text-white font-bold">
+              Hi, I am Arafat Hasan
+            </h1>
 
-             <p className='text-xl font-white'> I am a frontend web developer. I can provide clean code and pixel perfect design.
-             
-             I'am also passionate about building excellent web application that
-              improves the lives of those around me.
-             </p>
+            <p className="text-xl font-white">
+              {' '}
+              I am a frontend web developer. I can provide clean code and pixel
+              perfect design. I'am also passionate about building excellent web
+              application that improves the lives of those around me.
+            </p>
 
-             <div className=''>
-            
-                 <h1 className='text-2xl font-bold border-red-700  border-b-2 inline-block mb-5 '>My Skills Set</h1>
-                  <div>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Html</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Css</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Javascript</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Es6</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>React</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Node js</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Express</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>MongoDB</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Redux</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Firebase</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Bootstrap</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>Tailwind</button>
-                      <button className='bg-red-700 rounded border-none px-2 mr-2 mb-2'>MUI</button>
-                   </div>
-             </div>
+            <div className="">
+              <h1 className="text-3xl font-bold border-[#F51613]  border-b-2 inline-block mb-5 ">
+                My Skills Set
+              </h1>
+              <div>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Html
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Css
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Javascript
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Es6
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  React
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Node js
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Express
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  MongoDB
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Redux
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Firebase
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Bootstrap
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  Tailwind
+                </button>
+                <button className="bg-[#F51613] rounded border-none px-2 mr-2 mb-2">
+                  MUI
+                </button>
+              </div>
+            </div>
           </div>
-         
-
-       </div>
-
-     </section>
-
+        </div>
+      </section>
     </>
   )
 }

@@ -10,16 +10,16 @@ const Banner = () => {
       <section className="contaiener text-white ">
         <div className="flex flex-col md:flex-row justify-around  items-center gap-0 md:gap-x-40 Banner__height ">
           <div className="flex flex-col gap-5 text-center">
-            <h1 className="text-4xl md:text-6xl text-red-700 font-extrabold ">
+            <h1 className="text-4xl md:text-6xl text-[#F51613] font-extrabold ">
               Arafat Hasan
             </h1>
             <h2 className="text-3xl font-extrabold">Frontend Developer</h2>
-            <button className="py-2 px-6 border w-[160px] mx-auto border-red-700 font-extrabold text-2xl hover:bg-red-700 text-white transition-colors duration-100 ">
+            <button className="py-2 px-6 border w-[160px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
               Resume
             </button>
           </div>
           <div className="order-first md:order-last">
-            <div className="w-[330px] h-[330px] md:w-[480px] md:h-[500px] rounded-full relative bg-red-700">
+            <div className="w-[330px] h-[330px] md:w-[480px] md:h-[500px] rounded-full relative bg-[#F51613]">
               <div className="w-[330px] h-[330px] md:w-[500px] md:h-[500px] rounded-full  absolute top-5 right-6 overflow-hidden bg-slate-800">
                 <img
                   style={{ width: '100%' }}

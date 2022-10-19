@@ -48,18 +48,18 @@ const Work = () => {
   return (
     <>
       <section className="section">
-        <div className="flex justify-between items-center">
-          <h1 className="text-3xl md:text-5xl text-white font-bold">
-            Projects
+        <div className="flex justify-between items-center mt-0 md:mt-28">
+          <h1 className="text-4xl md:text-6xl text-white font-extrabold border-b-2 border-[#FF1600] inline">
+            PROJECTS
           </h1>
           <div className="flex w-[100px] gap-4">
             <BiChevronsLeft
-              className="bg-red-700 rounded"
+              className="bg-[#F51613] rounded"
               size={25}
               color={'white'}
             />
             <BiChevronsRight
-              className="bg-red-700 rounded"
+              className="bg-[#F51613] rounded"
               size={25}
               color={'white'}
             />
@@ -70,8 +70,8 @@ const Work = () => {
           <div className="flex-1">
             <img src={mockup} alt="" />
           </div>
-          <div className=" flex flex-1 justify-center items-center flex-col text-left text-white px-4">
-            <h1 className="text-4xl font-extrabold mb-4">Product Title</h1>
+          <div className=" flex flex-1 justify-center items-center flex-col text-left text-white px-4 py-2">
+            <h1 className="text-3xl font-extrabold mb-4">Product Title</h1>
             <p className="text-[20px] w-4/5  text-center my-8 ">
               {' '}
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -79,7 +79,7 @@ const Work = () => {
               blanditiis fuga, exercitationem quasi consectetur dignissimos
               expedita sapiente corporis culpa voluptatem distinctio.{' '}
             </p>
-            <button className="py-2 px-6 border w-[260px] mx-auto border-red-700 font-extrabold text-2xl hover:bg-red-700 text-white transition-colors duration-100 ">
+            <button className="py-2 px-6 border w-[260px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
               Live Preview
             </button>
           </div>

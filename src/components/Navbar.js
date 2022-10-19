@@ -32,7 +32,7 @@ const Navbar = () => {
               {/* manu  */}
               <ul className="hidden md:flex gap-4 text-white">
                 <Link
-                  className="hover:border-b border-red-700 transition-all duration-150  font-semibold text-xl  "
+                  className="hover:border-b border-[#F51613] transition-all duration-150  font-semibold text-xl  "
                   to="/"
                   smooth={true}
                   duration={900}
@@ -43,13 +43,13 @@ const Navbar = () => {
                   to="work"
                   smooth={true}
                   duration={900}
-                  className="hover:border-b border-red-700 transition-all duration-150  font-semibold text-xl  "
+                  className="hover:border-b border-[#F51613] transition-all duration-150  font-semibold text-xl  "
                 >
                   <li>work</li>{' '}
                 </Link>
                 <Link
                   to="about"
-                  className="hover:border-b border-red-700 transition-all duration-150 mx-4 font-semibold text-xl  "
+                  className="hover:border-b border-[#F51613] transition-all duration-150 mx-4 font-semibold text-xl  "
                   smooth={true}
                   duration={900}
                 >
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to="contact"
-                  className="hover:border-b border-red-700 transition-all duration-150 mx-4 font-semibold text-xl  "
+                  className="hover:border-b border-[#F51613] transition-all duration-150 mx-4 font-semibold text-xl  "
                   smooth={true}
                   duration={900}
                 >
@@ -67,7 +67,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to="skills"
-                  className="hover:border-b border-red-700 transition-all duration-150 mx-4 font-semibold text-xl  "
+                  className="hover:border-b border-[#F51613] transition-all duration-150 mx-4 font-semibold text-xl  "
                   smooth={true}
                   duration={900}
                 >
@@ -94,23 +94,23 @@ const Navbar = () => {
             <ul
               className={
                 nav
-                  ? 'h-[300px] overflow-auto flex flex-col gap-6 border-t border-red-700 py-5 my-4 text-white md:hidden transition-all  duration-1000'
+                  ? 'h-[300px] overflow-auto flex flex-col gap-6 border-t border-[#F51613] py-5 my-4 text-white md:hidden transition-all  duration-1000'
                   : ' transition-all  duration-1000     h-[0px] overflow-hidden '
               }
             >
               <Link className="" to="home" smooth={true} duration={900}>
-                <li className="hover:text-red-700 transition-all duration-200">
+                <li className="hover:text-[#F51613] transition-all duration-200">
                   Home
                 </li>{' '}
               </Link>
               <Link to="work" smooth={true} duration={900}>
                 {' '}
-                <li className="hover:text-red-700 transition-all duration-200">
+                <li className="hover:text-[#F51613] transition-all duration-200">
                   works
                 </li>{' '}
               </Link>
               <Link
-                className="hover:text-red-700 transition-all duration-200"
+                className="hover:text-[#F51613] transition-all duration-200"
                 to="about"
                 smooth={true}
                 duration={900}
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <li>About</li>{' '}
               </Link>
               <Link
-                className="hover:text-red-700 transition-all duration-200"
+                className="hover:text-[#F51613] transition-all duration-200"
                 to="contact"
                 smooth={true}
                 duration={900}
@@ -128,7 +128,7 @@ const Navbar = () => {
                 <li>Contact</li>{' '}
               </Link>
               <Link
-                className="hover:text-red-700 transition-all duration-200"
+                className="hover:text-[#F51613] transition-all duration-200"
                 to="skills"
                 smooth={true}
                 duration={900}

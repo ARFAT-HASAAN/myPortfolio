@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         <Link to="home" smooth={true} duration={900}>
-          <button className="bg-red-700 px-2 rounded-md">
+          <button className="bg-[#F51613] px-2 rounded-md">
             {' '}
             <FaAngleUp size={30} />{' '}
           </button>{' '}

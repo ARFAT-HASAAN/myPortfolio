@@ -5,63 +5,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Raleway:ital,wght@0,400;1,200&display=swap');
 
 @layer base {
-
-    body {
-        @apply bg-[#111827];
-        @apply font-[Raleway]
-    }
-    a:active {
-        @apply border-b;
-        @apply border-red-700;
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer;
-        @apply font-semibold
-    }
+  body {
+    @apply bg-[#111827];
+    @apply font-[Raleway];
+  }
+  a:active {
+    @apply border-b;
+    @apply border-[#F51613];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+    @apply font-semibold;
+  }
 }
 
-.contaiener{
-    width: 95%;
-    margin: 0 auto;
+.contaiener {
+  width: 95%;
+  margin: 0 auto;
 }
 
 .section {
-
-    width: 80%;
-    margin:  100px auto;
+  width: 95%;
+  margin: 50px auto;
 }
 
-.Banner__height{
-    height: calc(100vh - 70px);
-
+.Banner__height {
+  height: calc(100vh - 70px);
 }
 
-@media (max-whidth: 590px){
-    .contaienr{
-        width: 100%;
-    }
-
+@media (max-whidth: 590px) {
+  .contaienr {
+    width: 100%;
+  }
 }
 .container-div:hover {
-    background-image: linear-gradient(to right,
-            rgba(112, 157, 255, 0.8),
-            hsla(242, 74%, 61%, 0.8));
-    opacity: 1.2;
-    background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 250px;
-
+  background-image: linear-gradient(
+    to right,
+    rgba(112, 157, 255, 0.8),
+    hsla(242, 74%, 61%, 0.8)
+  );
+  opacity: 1.2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
 }
 
 /* card design  */
 .container-div {
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
 }
-

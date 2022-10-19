@@ -7,12 +7,12 @@ const Stratagy = () => {
     <>
       <section className="contaiener">
         <div className="flex  mx-auto flex-col gap-3 mb-8 text-center items-center justify-center">
-          <h1 className="text-2xl md:text-5xl text-white font-bold">
+          <h1 className="text-4xl md:text-6xl text-white font-extrabold">
             HOW I DO
           </h1>
           <div className="w-[200px]">
-            <p className="border-t-2 border-red-700 mb-2 w-3/5 mx-auto"></p>
-            <p className="border-t-2 border-red-700 w-2/5 mx-auto"></p>
+            <p className="border-t-2 border-[#F51613] mb-2 w-3/5 mx-auto"></p>
+            <p className="border-t-2 border-[#F51613] w-2/5 mx-auto"></p>
           </div>
         </div>
 
