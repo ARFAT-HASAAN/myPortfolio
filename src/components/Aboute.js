@@ -6,7 +6,7 @@ import mypicture from '../assets/bannerme.png'
 const Aboute = () => {
   return (
     <>
-      <section className="section md:h-screen ">
+      <section className="section  md:px-32">
         <div>
           <h1 className="text-4xl text-center md:text-left md:text-6xl font-bold  text-white inline-block my-4 md:my-40  border-b-2 border-[#FF1600]  ">
             {' '}

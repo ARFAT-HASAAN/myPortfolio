@@ -47,7 +47,7 @@ const Work = () => {
 
   return (
     <>
-      <section className="section">
+      <section className="section md:h-screen md:px-32">
         <div className="flex justify-between items-center mt-0 md:mt-28">
           <h1 className="text-4xl md:text-6xl text-white font-extrabold border-b-2 border-[#FF1600] inline">
             PROJECTS

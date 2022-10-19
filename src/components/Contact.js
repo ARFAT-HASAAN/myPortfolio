@@ -55,7 +55,7 @@ const Contact = () => {
   }
 
   return (
-    <div name="contact" className="section text-white">
+    <div name="contact" className="section md:px-32 text-white">
       <div className=" px-2 flex flex-col justify-center md:h-screen ">
         <div className="mb-8">
           <h1 className="inline text-4xl md:text-6xl font-bold border-b-2 border-[#FF1600]">
