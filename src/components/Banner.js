@@ -7,7 +7,7 @@ import mypicture from '../assets/bannerme.png'
 const Banner = () => {
   return (
     <>
-      <section className="contaiener text-white ">
+      <section id="home" className="contaiener text-white ">
         <div className="flex flex-col md:flex-row justify-around  items-center gap-0 md:gap-x-40 Banner__height ">
           <div className="flex flex-col gap-5 text-center">
             <h1 className="text-4xl md:text-6xl text-[#F51613] font-extrabold ">

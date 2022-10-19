@@ -19,7 +19,7 @@ import {
 const Home = () => {
   return (
     <>
-      <div className=" hidden  md:flex fixed flex-col left-0 top-80">
+      <div className=" hidden  md:flex fixed flex-col left-0 top-80 z-50">
         <li className="list-none w-[160px] h-[70] text-violet-50 ml-[-100px] hover:ml-[-10px] duration-300 py-2 bg-blue-500 ">
           <a
             href="https://www.linkedin.com/in/arfat03/"
