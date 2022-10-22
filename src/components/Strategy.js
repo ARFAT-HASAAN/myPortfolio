@@ -7,7 +7,7 @@ const Stratagy = () => {
     <>
       <section className="contaiener">
         <div className="flex  mx-auto flex-col gap-3 mb-8 text-center items-center justify-center">
-          <h1 className="text-4xl md:text-6xl text-white font-extrabold">
+          <h1 className="text-2xl md:text-5xl text-white font-extrabold my-2">
             HOW I DO
           </h1>
           <div className="w-[200px]">
@@ -21,9 +21,9 @@ const Stratagy = () => {
             <img
               style={{ width: '100px', margin: 'auto' }}
               src={plan}
-              alt="photo"
+              alt="instraction"
             />
-            <p className="text-[14px] font-bold md:text-[18px]  text-white">
+            <p className="text-[14px] py-2 md:text-[18px]  text-white">
               GET INSTRUNCTION
             </p>
           </div>
@@ -31,9 +31,9 @@ const Stratagy = () => {
             <img
               style={{ width: '100px', margin: 'auto' }}
               src={code}
-              alt="photo"
+              alt="plan"
             />
-            <p className="text-[14px] font-bold md:text-[18px]  text-white">
+            <p className="text-[14px] py-2 md:text-[18px]  text-white">
               PLAN & CODE
             </p>
           </div>
@@ -41,9 +41,9 @@ const Stratagy = () => {
             <img
               style={{ width: '100px', margin: 'auto' }}
               src={test}
-              alt="photo"
+              alt="test"
             />
-            <p className="text-[14px] font-bold md:text-[18px]  text-white">
+            <p className="text-[14px] py-2 md:text-[18px]  text-white">
               TEST & DELIVER
             </p>
           </div>
@@ -51,9 +51,9 @@ const Stratagy = () => {
             <img
               style={{ width: '100px', margin: 'auto' }}
               src={deploy}
-              alt="photo"
+              alt="deploy"
             />
-            <p className="text-[14px] font-bold md:text-[18px]  text-white">
+            <p className="text-[14px] py-2 md:text-[18px]  text-white">
               REVIEW & DEPLOY
             </p>
           </div>

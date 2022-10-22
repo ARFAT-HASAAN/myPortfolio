@@ -6,7 +6,7 @@ const Aboute = () => {
     <>
       <section id="about" className="section  md:px-32">
         <div>
-          <h1 className="text-4xl text-center md:text-left md:text-6xl font-bold  text-white inline-block my-4 md:my-40  border-b-2 border-[#FF1600]  ">
+          <h1 className="text-2xl  text-center md:text-left md:text-5xl font-bold  text-white inline-block my-4 md:my-40  border-b-2 border-[#FF1600]  ">
             {' '}
             ABOUT ME{' '}
           </h1>
@@ -16,11 +16,7 @@ const Aboute = () => {
           <div className="flex flex-1 px-3 ">
             <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px]  relative bg-[#F51613]">
               <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px]   absolute top-3 right-3 overflow-hidden bg-slate-800">
-                <img
-                  style={{ width: '100%' }}
-                  src={mypicture}
-                  alt="my picture"
-                />
+                <img style={{ width: '100%' }} src={mypicture} alt="images" />
               </div>
             </div>
           </div>

@@ -13,11 +13,11 @@ const Contact = () => {
     <div name="contact" className="section md:px-32 text-white">
       <div className=" px-2 flex flex-col justify-center md:h-screen ">
         <div className="mb-8">
-          <h1 className="inline text-4xl md:text-6xl font-bold border-b-2 border-[#FF1600]">
+          <h1 className="inline text-2xl md:text-5xl font-bold border-b-2 border-[#FF1600]">
             CONTACT
           </h1>
           <p className="mt-4">
-            // I am interested in working with any company that thinks my skill
+            I am interested in working with any company that thinks my skill
             will be helpful for them. If you are looking for someone like me,
             please let me know. Or you can just 'say hi' to me.
           </p>

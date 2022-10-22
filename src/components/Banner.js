@@ -11,7 +11,7 @@ const Banner = () => {
               Arafat Hasan
             </h1>
             <h2 className="text-3xl font-extrabold">Frontend Developer</h2>
-            <button className="py-2 px-6 border w-[160px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
+            <button className="py-2 px-6 border w-[160px] mx-auto border-[#F51613]  hover:bg-[#F51613] text-white transition-colors duration-100 ">
               <a
                 href="https://docs.google.com/document/d/1U2bTdQ5hU-_LkVxjUMQzPQYoOp-jzYo9FaeZWgNDcOw/edit?usp=sharing"
                 target="_blank"
@@ -22,12 +22,12 @@ const Banner = () => {
             </button>
           </div>
           <div className="order-first md:order-last">
-            <div className="w-[330px] h-[330px] md:w-[480px] md:h-[500px] rounded-full relative bg-[#F51613]">
-              <div className="w-[330px] h-[330px] md:w-[500px] md:h-[500px] rounded-full  absolute top-5 right-6 overflow-hidden bg-slate-800">
+            <div className="w-[230px] h-[230px] md:w-[480px] md:h-[500px] rounded-full relative bg-[#F51613]">
+              <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px] rounded-full  absolute top-5 right-6 overflow-hidden bg-slate-800">
                 <img
                   style={{ width: '100%' }}
                   src={mypicture}
-                  alt="my picture"
+                  alt="owner img"
                 />
               </div>
             </div>

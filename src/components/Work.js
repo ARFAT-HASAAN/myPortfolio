@@ -27,7 +27,7 @@ const Work = () => {
     <>
       <section id="work" className="section  md:h-screen md:px-32">
         <div className="flex justify-between items-center mt-0 md:mt-28">
-          <h1 className="text-4xl md:text-6xl text-white font-extrabold border-b-2 border-[#FF1600] inline">
+          <h1 className="text-2xl md:text-5xl text-white font-bold border-b-2 border-[#FF1600] inline">
             PROJECTS
           </h1>
           <div className="flex w-[100px] gap-4">
@@ -70,7 +70,7 @@ const Work = () => {
                     {' '}
                     {project.desc}
                   </p>
-                  <button className="py-2 px-6 border w-[200px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
+                  <button className="py-2 px-6 border w-[200px] mx-auto border-[#F51613]  hover:bg-[#F51613] text-white transition-colors duration-100 ">
                     <a href={project.Live}>Live Preview </a>
                   </button>
                 </div>
