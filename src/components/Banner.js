@@ -1,7 +1,4 @@
 import React from 'react'
-import { FaHandPointRight, FaDownload } from 'react-icons/fa'
-import { Button } from 'react-scroll'
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 import mypicture from '../assets/bannerme.png'
 
 const Banner = () => {

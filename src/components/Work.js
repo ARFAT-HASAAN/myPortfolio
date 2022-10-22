@@ -1,14 +1,8 @@
-import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
-import { useEffect } from 'react'
-import Spinner from './Loading'
-import MyProjects from './MyProjects'
-import swal from 'sweetalert'
 import { BiChevronsRight } from 'react-icons/bi'
 import { BiChevronsLeft } from 'react-icons/bi'
 import { ProjectsData } from '../Dummy/ProjectsData'
-import mockup from '../assets/realestate.jpg'
 
 export const isLoading = (state) => {
   return state
@@ -31,7 +25,7 @@ const Work = () => {
 
   return (
     <>
-      <section className="section  md:h-screen md:px-32">
+      <section id="work" className="section  md:h-screen md:px-32">
         <div className="flex justify-between items-center mt-0 md:mt-28">
           <h1 className="text-4xl md:text-6xl text-white font-extrabold border-b-2 border-[#FF1600] inline">
             PROJECTS

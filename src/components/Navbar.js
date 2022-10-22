@@ -1,13 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png.png'
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedinIn,
-  FaEnvelopeOpen,
-  FaFile,
-} from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -64,15 +57,6 @@ const Navbar = () => {
                 >
                   {' '}
                   <li>Contact</li>{' '}
-                </Link>
-                <Link
-                  to="skills"
-                  className="hover:border-b border-[#F51613] transition-all duration-150 mx-4 font-semibold text-xl  "
-                  smooth={true}
-                  duration={900}
-                >
-                  {' '}
-                  <li>Skills</li>{' '}
                 </Link>
               </ul>
 

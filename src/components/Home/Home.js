@@ -5,17 +5,9 @@ import Banner from '../Banner'
 import Contact from '../Contact'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
-import Skills from '../Skills'
 import Work from '../Work'
 import Stratagy from '../Strategy'
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedinIn,
-  FaEnvelopeOpen,
-  FaFile,
-} from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaEnvelopeOpen, FaFile } from 'react-icons/fa'
 const Home = () => {
   return (
     <>

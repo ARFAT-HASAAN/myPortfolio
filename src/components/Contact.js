@@ -1,53 +1,8 @@
-import axios from 'axios'
-import React, { useState } from 'react'
-import { FaSpinner } from 'react-icons/fa'
-import { useLocation, useNavigate } from 'react-router-dom'
+// import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useForm, ValidationError } from '@formspree/react'
 const Contact = () => {
   const navigate = useNavigate()
-
-  const [error, setError] = useState(null)
-  const [loading, setLoading] = useState(false)
-  const [query, setQuery] = useState({ name: '', email: '', message: '' })
-
-  const handleChange = (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    setQuery({ ...query, [name]: value })
-  }
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   const user = { ...query }
-
-  //   setLoading(true)
-
-  //   axios
-  //     .post('https://portfoliobackendoriginal.herokuapp.com/users', user)
-  //     .then((res) => {
-  //       // check message
-  //       if (res.data.acknowledged) {
-  //         setLoading(false)
-  //         setError('')
-  //         navigate('Thnkfull')
-  //       }
-  //     })
-
-  //     // catch error
-  //     .catch((error) => {
-  //       setError(error.message)
-  //       setLoading(false)
-  //     })
-
-  //     // clear input
-  //     .finally(
-  //       setQuery({
-  //         name: '',
-  //         email: '',
-  //         message: '',
-  //       }),
-  //     )
-  // }
 
   const [state, handleSubmit] = useForm('meqdlgoy')
   if (state.succeeded) {
