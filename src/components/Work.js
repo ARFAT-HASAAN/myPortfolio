@@ -85,12 +85,15 @@ const Work = () => {
             />
           </div>
         </div>
+
+          <div className='flex items-center h-full' >
+
         {
           ProjectsData.map((project, index) => ( 
             <div key={index} className={index === current ? "slide active " : "slide "}>
               <div className='flex flex-col md:flex-row h-full w-full justify-start my-12  shadow-md shadow-white'>
               <div className="flex-1">
-            <img src={project.mockup} alt="" />
+            <img style={{width: "100%", height: "100%"}} src={project.mockup} alt="" />
           </div>
           <div className=" flex flex-1 justify-center items-center flex-col text-left text-white px-4 py-2">
             <h1 className="text-3xl font-extrabold mb-4">{project.Title}</h1>
@@ -98,7 +101,7 @@ const Work = () => {
               {' '}
               {project.desc}
             </p>
-            <button className="py-2 px-6 border w-[260px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
+            <button className="py-2 px-6 border w-[200px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
               <a  href={project.Live} >Live Preview </a>
             </button>
           </div>
@@ -107,6 +110,8 @@ const Work = () => {
         </div>
           )) 
         }
+          </div>
+
         
       </section>
     </>
