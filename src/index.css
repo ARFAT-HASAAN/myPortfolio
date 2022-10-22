@@ -60,12 +60,14 @@
   height: 250px;
 }
 .slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+  display: none;
+
 }
 
 .slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
+  transition: display 2s;
+  
+  display: block;
+ 
+ 
 }

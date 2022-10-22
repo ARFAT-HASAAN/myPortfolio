@@ -88,7 +88,7 @@ const Work = () => {
         {
           ProjectsData.map((project, index) => ( 
             <div key={index} className={index === current ? "slide active " : "slide "}>
-              <div className='flex flex-col md:flex-row w-full justify-start my-12  shadow-md shadow-white'>
+              <div className='flex flex-col md:flex-row h-full w-full justify-start my-12  shadow-md shadow-white'>
               <div className="flex-1">
             <img src={project.mockup} alt="" />
           </div>
