@@ -7,7 +7,7 @@ import MyProjects from './MyProjects'
 import swal from 'sweetalert'
 import { BiChevronsRight } from 'react-icons/bi'
 import { BiChevronsLeft } from 'react-icons/bi'
-import {ProjectsData} from "../Dummy/ProjectsData"
+import { ProjectsData } from '../Dummy/ProjectsData'
 import mockup from '../assets/realestate.jpg'
 
 export const isLoading = (state) => {
@@ -15,7 +15,6 @@ export const isLoading = (state) => {
 }
 
 const Work = () => {
-
   const [current, setCurrent] = useState(0)
   const length = ProjectsData.length
   const Next = () => {
@@ -23,49 +22,16 @@ const Work = () => {
   }
 
   const Prev = () => {
-    setCurrent(current === 0 ? length - 1: current - 1)
+    setCurrent(current === 0 ? length - 1 : current - 1)
   }
 
-  if(!Array.isArray(ProjectsData) || ProjectsData <= 0){
+  if (!Array.isArray(ProjectsData) || ProjectsData <= 0) {
     return null
-
   }
-
-
-
-
-
-  // useEffect(() => {
-  //   axios
-  //     .get('https://arfat-hasaan.github.io/API/Projects.json')
-  //     .then((res) => {
-  //       if (res.data) {
-  //         setLoading(true)
-  //         isLoading(true)
-  //         setProjects(res.data)
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log(error)
-  //       if (error.message) {
-  //         swal({
-  //           icon: 'warning',
-  //           title: 'Opps',
-  //           text:
-  //             'Connectino dropped! Please check your internet connecton or reload the page',
-  //           buttons: 'Reload',
-  //         }).then((res) => {
-  //           if (res) {
-  //             window.location.reload()
-  //           }
-  //         })
-  //       }
-  //     })
-  // }, [])
 
   return (
     <>
-      <section className="section md:h-screen md:px-32">
+      <section className="section  md:h-screen md:px-32">
         <div className="flex justify-between items-center mt-0 md:mt-28">
           <h1 className="text-4xl md:text-6xl text-white font-extrabold border-b-2 border-[#FF1600] inline">
             PROJECTS
@@ -86,33 +52,38 @@ const Work = () => {
           </div>
         </div>
 
-          <div className='flex items-center h-full' >
-
-        {
-          ProjectsData.map((project, index) => ( 
-            <div key={index} className={index === current ? "slide active " : "slide "}>
-              <div className='flex flex-col md:flex-row h-full w-full justify-start my-12  shadow-md shadow-white'>
-              <div className="flex-1">
-            <img style={{width: "100%", height: "100%"}} src={project.mockup} alt="" />
-          </div>
-          <div className=" flex flex-1 justify-center items-center flex-col text-left text-white px-4 py-2">
-            <h1 className="text-3xl font-extrabold mb-4">{project.Title}</h1>
-            <p className="text-[20px] w-4/5  text-center my-8 ">
-              {' '}
-              {project.desc}
-            </p>
-            <button className="py-2 px-6 border w-[200px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
-              <a  href={project.Live} >Live Preview </a>
-            </button>
-          </div>
+        <div className="flex items-center h-full">
+          {ProjectsData.map((project, index) => (
+            <div
+              key={index}
+              className={
+                index === current ? 'slide active section px-5' : 'slide'
+              }
+            >
+              <div className="flex flex-col md:flex-row h-full w-full justify-start my-12  shadow-md shadow-white">
+                <div className="flex-1">
+                  <img
+                    style={{ width: '100%', height: '100%' }}
+                    src={project.mockup}
+                    alt=""
+                  />
+                </div>
+                <div className=" flex flex-1 justify-center items-center flex-col text-left text-white px-4 py-2">
+                  <h1 className="text-3xl font-extrabold mb-4">
+                    {project.Title}
+                  </h1>
+                  <p className="text-[20px] w-4/5  text-center my-8 ">
+                    {' '}
+                    {project.desc}
+                  </p>
+                  <button className="py-2 px-6 border w-[200px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
+                    <a href={project.Live}>Live Preview </a>
+                  </button>
+                </div>
               </div>
-         
+            </div>
+          ))}
         </div>
-          )) 
-        }
-          </div>
-
-        
       </section>
     </>
   )

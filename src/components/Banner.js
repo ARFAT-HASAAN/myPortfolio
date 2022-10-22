@@ -15,7 +15,13 @@ const Banner = () => {
             </h1>
             <h2 className="text-3xl font-extrabold">Frontend Developer</h2>
             <button className="py-2 px-6 border w-[160px] mx-auto border-[#F51613] font-extrabold text-2xl hover:bg-[#F51613] text-white transition-colors duration-100 ">
-              Resume
+              <a
+                href="https://docs.google.com/document/d/1U2bTdQ5hU-_LkVxjUMQzPQYoOp-jzYo9FaeZWgNDcOw/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume{' '}
+              </a>
             </button>
           </div>
           <div className="order-first md:order-last">

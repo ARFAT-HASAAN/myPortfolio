@@ -15,7 +15,7 @@ const Aboute = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-white ">
-          <div className="flex flex-1 ">
+          <div className="flex flex-1 px-3 ">
             <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px]  relative bg-[#F51613]">
               <div className="w-[230px] h-[230px] md:w-[500px] md:h-[500px]   absolute top-3 right-3 overflow-hidden bg-slate-800">
                 <img
